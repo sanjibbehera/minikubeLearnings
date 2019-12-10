@@ -34,6 +34,9 @@ There are 2 ways to connect it.
 > launch the VM from Oracle Virtualbox and use the credentials. 'docker/tcuser'.
 
 #### Step 5. Interact with Kubernetes Cluster with an existing image.
+> <b> Find the nodes running in the cluster.</b>  
+kubectl get nodes
+
 > <b>create a Kubernetes Deployment using an existing image named echoserver,  
 which is a simple HTTP server and expose it on port 8080 using --port</b>   
 kubectl create deployment hello-minikube --image=k8s.gcr.io/echoserver:1.10
