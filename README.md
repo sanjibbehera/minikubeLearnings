@@ -20,3 +20,5 @@
 ![alt text](https://github.com/sanjibbehera/minikubeLearnings/blob/master/minikube_successful_start.JPG)
 
 > Check the status if the minikube is successfully configured, the below snip o/p states success.
+![alt text](https://github.com/sanjibbehera/minikubeLearnings/blob/master/minikube_successful_configuration.JPG)
+
