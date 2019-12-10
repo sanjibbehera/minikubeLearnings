@@ -32,3 +32,23 @@ There are 2 ways to connect it.
 > Use command prompt from Kubernetes folder and issue the command 'minikube ssh'.
 
 > launch the VM from Oracle Virtualbox and use the credentials. 'docker/tcuser'.
+
+#### Step 5. Interact with Kubernetes Cluster with an existing image.
+> create a Kubernetes Deployment using an existing image named echoserver,  
+which is a simple HTTP server and expose it on port 8080 using --port   
+###### kubectl create deployment hello-minikube --image=k8s.gcr.io/echoserver:1.10
+
+> To access the hello-minikube Deployment, expose it as a service.  
+###### kubectl expose deployment hello-minikube --type=NodePort --port=8080
+
+> Check if the deployment is up and running using the below command.  
+###### kubectl get pod
+
+> Get the URL of the exposed Service to view the Service details.  
+###### minikube service hello-minikube --url
+
+> Delete the service of the deployment.  
+###### kubectl delete services hello-minikube
+
+> Delete the deployment.  
+###### kubectl delete deployment hello-minikube
