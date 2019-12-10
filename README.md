@@ -16,4 +16,7 @@
 > https://github.com/kubernetes/minikube/releases/tag/v1.5.2 (At the time of writing this, latest version for minikube was 1.5.2, hence download the minikube binary from assets section).
 
 #### Step 3. Configure the minikube.
-> Go to Kubernetes folder and type the below command as shown in the snip.
+> Go to Kubernetes folder & execute the below command as shown in the below snip to configure minikube.
+![alt text](https://github.com/sanjibbehera/minikubeLearnings/blob/master/minikube_successful_start.JPG)
+
+> Check the status if the minikube is successfully configured, the below snip o/p states success.
