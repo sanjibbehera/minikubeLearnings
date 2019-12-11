@@ -9,8 +9,13 @@
 #### Step 1. Prerequisites for MINIKUBE installation/configuration in Windows platform.
 > Oracle Virtualbox or any other Hyper-V software must have been installed in windows.
 
-> check if virtualization is supported on Windows 10 with systeminfo command.
+> check if virtualization is supported on Windows 10 with systeminfo command.  
+The below screenshot is from the long list o/p of systeminfo command, if the below is not shown  
+then virtualization is not supported in your machine.
+![alt text](https://github.com/sanjibbehera/minikubeLearnings/blob/master/hyperVrequirement_windows.JPG)
 
+> If virtualization is not enabled, open powershell or cmd as administrator and execute below command.  
+DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V
 
 > wmic.exe is used while configuring minikube, hence the path 'C:\Windows\system32\wbem'  
 should be configured in PATH environment variable.
@@ -63,4 +68,7 @@ kubectl delete deployment hello-minikube
 #### Part 2. Next we will start with UBUNTU OS. Below are the steps done by me.
 
 #### Step 1. Prerequisites for MINIKUBE installation/configuration in UBUNTU OS platform.
-> Check 
+> Check virtualization is supported in linux, the below command's o/p must be blank.  
+grep -E --color 'vmx|svm' /proc/cpuinfo
+
+#### Step 2. Install kubectl.
