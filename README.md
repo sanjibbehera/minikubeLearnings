@@ -17,7 +17,7 @@ then virtualization is not supported in your machine.
 > If Virtualization is not enabled, open powershell or cmd as <b>administrator</b> and execute below command.  
 <b>DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V</b>
 
-> wmic.exe is used while configuring <b>minikube</b>, hence the path 'C:\Windows\system32\wbem'  
+> <b>wmic.exe</b> is used while configuring <b>minikube</b>, hence the path 'C:\Windows\system32\wbem'  
 should be configured in PATH environment variable.
 
 #### Step 2. Download kubectl and minikube exe files from the below URLs and keep it in C drive in a folder say Kubernetes.
