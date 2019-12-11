@@ -9,15 +9,15 @@
 #### Step 1. Prerequisites for MINIKUBE installation/configuration in Windows platform.
 > Oracle Virtualbox or any other Hyper-V software must have been installed in windows.
 
-> check if virtualization is supported on Windows 10 with systeminfo command.  
-The below screenshot is from the long list o/p of systeminfo command, if the below is not shown  
+> check if Virtualization is supported on Windows 10 with <b>systeminfo</b> command.  
+The below screenshot is from the long list o/p of <b>systeminfo</b> command, if the below is not shown  
 then virtualization is not supported in your machine.
 ![alt text](https://github.com/sanjibbehera/minikubeLearnings/blob/master/hyperVrequirement_windows.JPG)
 
-> If virtualization is not enabled, open powershell or cmd as administrator and execute below command.  
-DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V
+> If Virtualization is not enabled, open powershell or cmd as <b>administrator</b> and execute below command.  
+<b>DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V</b>
 
-> wmic.exe is used while configuring minikube, hence the path 'C:\Windows\system32\wbem'  
+> wmic.exe is used while configuring <b>minikube</b>, hence the path 'C:\Windows\system32\wbem'  
 should be configured in PATH environment variable.
 
 #### Step 2. Download kubectl and minikube exe files from the below URLs and keep it in C drive in a folder say Kubernetes.
