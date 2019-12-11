@@ -68,7 +68,31 @@ kubectl delete deployment hello-minikube
 #### Part 2. Next we will start with UBUNTU OS. Below are the steps done by me.
 
 #### Step 1. Prerequisites for MINIKUBE installation/configuration in UBUNTU OS platform.
-> Check virtualization is supported in linux, the below command's o/p must be blank.  
+> Check Virtualization is supported in linux, the below command's o/p must be blank.  
 grep -E --color 'vmx|svm' /proc/cpuinfo
 
-#### Step 2. Install kubectl.
+#### Step 2. Install kubectl. 
+> <b>use the below command to download kubectl binary.</b>  
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+
+> <b>Make the kubectl binary executable.</b>  
+chmod +x kubectl
+
+> <b>Move the binary to PATH environment variable</b>  
+sudo mv ./kubectl /usr/local/bin/kubectl
+
+#### Step 3. Install Virtualbox.
+> <b>Download Virtualbox 6.0.14 for ubuntu using below link.</b>  
+https://download.virtualbox.org/virtualbox/6.0.14/virtualbox-6.0_6.0.14-133895~Ubuntu~bionic_amd64.deb
+
+> Before installing ensure below packages are already installed in Ubuntu 18.04.  
+<b>libqt5core5a (>= 5.9.0~beta)</b>  
+<b>libqt5gui5 (>= 5.4.0)</b>  
+<b>libqt5opengl5 (>= 5.0.2)</b>  
+<b>libqt5printsupport5 (>= 5.0.2)</b>  
+<b>libqt5widgets5 (>= 5.7.0)</b>  
+<b>libqt5x11extras5 (>= 5.6.0)</b>  
+<b>libsdl1.2debian (>= 1.2.11)</b>  
+
+> <b>If the above libs are not installed, please execute the below command.</b>  
+sudo apt-get install libqt5opengl5 libqt5printsupport5 libqt5widgets5 libqt5x11extras5 libsdl1.2debian libqt5core5a libqt5gui5 libdouble-conversion1 libqt5dbus5 libqt5network5 libxcb-xinerama0 qtbase-abi-5-9-5
