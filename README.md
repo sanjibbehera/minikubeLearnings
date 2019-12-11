@@ -3,10 +3,14 @@
 ### Hello and Welcome to this Repo Page..
 ### Information is already there in the Kubernetes Page 'https://kubernetes.io' about how to setup/install/configure MINIKUBE.
 #### This Repo page showcases my experience about how to setup MINIKUBE on Windows and Ubuntu Platform.
-#### First we will start with WINDOWS OS. Below are the steps done by me.
+
+#### Part 1. First we will start with WINDOWS OS. Below are the steps done by me.
 
 #### Step 1. Prerequisites for MINIKUBE installation/configuration in Windows platform.
 > Oracle Virtualbox or any other Hyper-V software must have been installed in windows.
+
+> check if virtualization is supported on Windows 10 with systeminfo command.
+
 
 > wmic.exe is used while configuring minikube, hence the path 'C:\Windows\system32\wbem'  
 should be configured in PATH environment variable.
@@ -55,3 +59,8 @@ kubectl delete services hello-minikube
 
 > <b>Delete the deployment.</b>  
 kubectl delete deployment hello-minikube
+
+#### Part 2. Next we will start with UBUNTU OS. Below are the steps done by me.
+
+#### Step 1. Prerequisites for MINIKUBE installation/configuration in UBUNTU OS platform.
+> Check 
