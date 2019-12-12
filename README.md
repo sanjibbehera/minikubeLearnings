@@ -101,19 +101,21 @@ sudo apt-get install libqt5opengl5 libqt5printsupport5 libqt5widgets5 libqt5x11e
 sudo dpkg -i virtualbox-6.0_6.0.14-133895~Ubuntu~bionic_amd64.deb
 
 #### Step 4. Install Minikube.
-> Download minikube using the below command.  
+> <b>Before installing make sure that HYPER-V is enabled in the host.</b>
+
+> <b>Download minikube using the below command.</b>  
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \
   && chmod +x minikube
   
-> add minikube to PATH.  
+> <b>add minikube to PATH.</b>  
 sudo install minikube /usr/local/bin/
 
-> start minikube and check status.  
+> <b>start minikube and check status.</b>  
 <b>minikube start --vm-driver=virtualbox</b>  
 <b>minikube status</b>  ##below should be the o/p:
 
-host: Running  
-kubelet: Running  
-apiserver: Running  
-kubeconfig: Configured
+> <b>host: Running</b>  
+<b>kubelet: Running</b>  
+<b>apiserver: Running</b>  
+<b>kubeconfig: Configured</b>
 
