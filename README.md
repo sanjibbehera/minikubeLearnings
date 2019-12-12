@@ -110,9 +110,10 @@ sudo install minikube /usr/local/bin/
 
 > start minikube and check status.  
 <b>minikube start --vm-driver=virtualbox</b>  
-<b>minikube status</b>  ##below should be the o/p:  
-host: Running
-kubelet: Running
-apiserver: Running
+<b>minikube status</b>  ##below should be the o/p:
+
+host: Running  
+kubelet: Running  
+apiserver: Running  
 kubeconfig: Configured
 
