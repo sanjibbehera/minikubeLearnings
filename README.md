@@ -119,4 +119,4 @@ sudo install minikube /usr/local/bin/
 <b>apiserver: Running</b>  
 <b>kubeconfig: Configured</b>
 
-#### Step 5. Once the above steps to install minikube is completed, repeast the Step 4 & Step 5 from Windows part to continue.
+#### Step 5. Once the above steps to install minikube is completed, repeat the Step 4 & Step 5 from Windows part to continue.
